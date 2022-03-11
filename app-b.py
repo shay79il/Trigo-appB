@@ -6,7 +6,7 @@ app = Flask("AppB")
 
 @app.route('/', methods=['GET'])
 def score_server():
-    url = getenv('URL', 'appB.com')
+    url = getenv('URL', 'app-b.com')
     region = getenv('REGION', 'eu-west-1')
     env = getenv('ENV_NAME', 'DEV')
     if request.method == 'GET':
